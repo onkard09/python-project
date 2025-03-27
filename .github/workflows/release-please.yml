@@ -1,0 +1,24 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Release Please Action
+        uses: google-github-actions/release-please-action@4.1.3
+        with:
+          token: ${{ secrets.PAT_GITHUB_TOKEN }}
