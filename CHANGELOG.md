@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/onkard09/python-release-please/compare/python-v1.1.0...python-v1.1.1) (2025-03-30)
+
+
+### Bug Fixes
+
+* updated PR template for the bot ([0e102c6](https://github.com/onkard09/python-release-please/commit/0e102c633c46f94f06fcee4c9825543683fee7aa))
+
 ## [1.1.0](https://github.com/onkard09/python-project/compare/python-v1.0.0...python-v1.1.0) (2025-03-30)
 
 
