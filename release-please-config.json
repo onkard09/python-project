@@ -5,7 +5,8 @@
   "include-component-in-tag": true,
   "packages": {
     ".": {
-      "package-name": "python"
+      "package-name": "python",
+      "component": "python"
     }
   }
 }
