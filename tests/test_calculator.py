@@ -1,5 +1,5 @@
 import pytest
-from src.calculator import add, subtract, multiply, divide
+from src.calculator import add, subtract, multiply, divide, power
 
 def test_add():
     assert add(2, 3) == 5
@@ -30,3 +30,13 @@ def test_divide():
     assert divide(-6, -2) == 3
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(5, 0)
+
+def test_power():
+    assert power(2, 3) == 8  # 2^3 = 8
+    assert power(5, 0) == 1  # Any number to the power of 0 is 1
+    assert power(0, 5) == 0  # 0^5 = 0
+    assert power(2, -2) == 0.25  # 2^-2 = 1/4
+    assert power(-2, 3) == -8  # (-2)^3 = -8
+    assert power(-2, 2) == 4  # (-2)^2 = 4
+    assert power(1.5, 2) == 2.25  # 1.5^2 = 2.25
+    assert power(0, 0) == 1  # 0^0 is typically defined as 1
