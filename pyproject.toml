@@ -1,6 +1,6 @@
 [project]
 name = "python-project"
-version = "1.1.0"
+version = "1.1.1"
 description = "This is a demo python project to showcase reusable workflows and release please methodology"
 authors = [
     {name = "Onkar Deshpande",email = "deshpandeopd@gmail.com"}
